@@ -1,1 +1,9 @@
+<<<<<<< HEAD
 /target/
+||||||| parent of 4b92127 (tesst)
+=======
+/target/
+/.settings/
+/.classpath
+/.project
+>>>>>>> 4b92127 (tesst)

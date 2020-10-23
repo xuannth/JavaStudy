@@ -3,8 +3,10 @@ package nguyen.xuan;
 public class HelloWorld {
 
 	public static void main (String args[]) {
-		
-		System.out.println("Hello World!");
+	
+		String b;
+		b = "Hello World!";
+		System.out.print("Khai bao kieu string cua b la: " + b);
 		
 		int a; //Khai bao bien kieu nguyen
 		a = 10; // Gan gia tri a = 10
@@ -12,5 +14,4 @@ public class HelloWorld {
 		System.out.print("Gia tri cua a la: " + a);
 		
 	}
-	
 }
