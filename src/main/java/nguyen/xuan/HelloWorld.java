@@ -6,6 +6,10 @@ public class HelloWorld {
 		
 		System.out.println("Hello World!");
 		
+		int a; //Khai bao bien kieu nguyen
+		a = 10; // Gan gia tri a = 10
+		System.out.print("Gia tri cua a la: " + a);
+		
 	}
 	
 }
