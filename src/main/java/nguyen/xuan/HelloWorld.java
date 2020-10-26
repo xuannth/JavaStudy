@@ -3,21 +3,10 @@ package nguyen.xuan;
 public class HelloWorld {
 
 	public static void main (String args[]) {
-	
-		String s;
-		s = "Hello World!";
-		
-		System.out.println("Vi tri ki tu o trong chuoi la: " + s.indexOf("o"));
-		
-		System.out.println("Tai vi tri thu 7 cua chuoi la ki tu: " + s.charAt(7));
-			
-		System.out.println("Chuoi s co do dai la: " + s.length());
-		
-		System.out.println("Bien doi chuoi toan bo thanh chu hoa: " + s.toUpperCase());
-		
-		System.out.println("Bien doi chuoi toan bo thanh chu thuong: " + s.toLowerCase());
-		
-	
-		
+		String[] arr = {"A","B","C","D","E"};
+		System.out.println("Cac gia tri trong mang string la: ");
+		for (int i = 0; i < arr.length; i ++) {
+			System.out.println(arr[i]); 
+		}
 	}
 }
