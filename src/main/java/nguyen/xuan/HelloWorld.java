@@ -4,14 +4,20 @@ public class HelloWorld {
 
 	public static void main (String args[]) {
 	
-		String b;
-		b = "Hello World!";
-		System.out.print("Khai bao kieu string cua b la: " + b);
+		String s;
+		s = "Hello World!";
 		
-		int a; //Khai bao bien kieu nguyen
-		a = 10; // Gan gia tri a = 10
+		System.out.println("Vi tri ki tu o trong chuoi la: " + s.indexOf("o"));
 		
-		System.out.print("Gia tri cua a la: " + a);
+		System.out.println("Tai vi tri thu 7 cua chuoi la ki tu: " + s.charAt(7));
+			
+		System.out.println("Chuoi s co do dai la: " + s.length());
+		
+		System.out.println("Bien doi chuoi toan bo thanh chu hoa: " + s.toUpperCase());
+		
+		System.out.println("Bien doi chuoi toan bo thanh chu thuong: " + s.toLowerCase());
+		
+	
 		
 	}
 }
