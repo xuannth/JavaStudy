@@ -1,56 +1,21 @@
 package nguyen.xuan;
 
+import java.util.ArrayList;
+
 public class HelloWorld {
 
 	public static void main (String args[]) {
-		String s = new String("Hello World");
-		System.out.println("Doi chu o thanh chu O: " + s.replace('o', 'O'));
-		
-		char[] arr1= s.toCharArray();
-		int len = arr1.length;
-		
-		System.out.println("Chuoi truoc khi dao nguoc la: ");
-		for (int i = 0; i<len; i ++ ) {
-			System.out.print(arr1[i]); 
+		ArrayList<String> dictionary = new ArrayList<String>();
+		dictionary.add("Hello");
+		dictionary.add("My name is Xuan");
+		dictionary.add("I\'m thirty three years old");
+		dictionary.add("Nice to meet you");
+		dictionary.add("Goodbye");
+		System.out.println("Cac cau tieng anh trong list la:");
+		for (int i = 0; i < dictionary.size(); i ++) {
+			System.out.println(dictionary.get(i));
 		}
-		
-		char[] arr2 = new char[len];
-		
-		System.out.println("\nChuoi sau khi dao nguoc la: ");
-		String result = "";
-		
-		for (int i = len - 1; i >= 0; i --) {
-				arr2[len - 1 - i] = arr1[i];
-				result += arr2[len - 1 -i];
-		}	
-		System.out.println(result);
-		
-		String str = s.toLowerCase();
-		char[] arr3= str.toCharArray();
-		int[] arr = new int[len];
-		
-		System.out.println("Chuoi truoc khi sap xep: ");
-		
-		for (int i = 0; i < len; i++) {
-			arr[i] = (int)arr3[i];
-			System.out.print((char)arr[i]);
-		}
-		
-		int temp = arr[0];
-		for (int i = 0; i < len-1; i++) {
-			for (int j = i + 1; j < len; j++) {
-	    		if (arr[i] > arr[j]) {
-	    			temp = arr[j];
-	    			arr[j] = arr[i];
-	    			arr[i] = temp ;
-	    		}
-	    	}
-		}
-		
-		System.out.println("\nSap xep chuoi theo Alphabet: ");
-		for (int i = 0; i < len; i++) {
-			System.out.print((char)arr[i]);
-		}
-		
+		System.out.println("Cac phan tu co trong list la: ");
+		System.out.print(dictionary);
 	}
 }
